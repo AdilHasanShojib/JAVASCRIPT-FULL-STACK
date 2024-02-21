@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body>
+   
+   
+    <h2>JavaScript in Body</h2>
+
+    <p id="demo">SAJIB TALUKDER</p>
+    <!-- <button onclick="myFunction()">Click Here</button>
+
+<script>
+    function myFunction(){
+        document.getElementById("demo").style.color="blue";
+    }
+</script> -->
+
+<!-- <button id="btn">Click Me</button>
+<script>
+    var button=document.getElementById("btn");
+    button.addEventListener("click",function(){
+  
+        document.getElementById("demo").style.color="blue";
+    });
+</script> -->
+
+
+<!-- 
+<input id="input1" type="number">
+ <button>+</button>
+<input id="input2" type="number">
+  
+
+<button>=</button>
+
+
+<button onclick="sum()" >Click</button>
+<p id="output"></p>
+
+
+<script>
+    function sum (){
+
+    var input1 = parseFloat(document.getElementById("input1").value);
+    var input2 = parseFloat(document.getElementById("input2").value);
+
+    if(!isNaN(input1) && !isNaN(input2)){
+        var sum = input1+input2;
+        document.getElementById("output").textContent="This is SUM:"+ sum;
+    }
+    
+      else{
+        document.getElementById("output").textContent="please enter valid number";
+      }
+
+    }
+    </script>
+     -->
+
+
+     <label for="input"></label>
+     
+     <input type="text" name="input" id="input">
+     <button onclick="addtask()">Add</button>
+
+     <ul id="list"></ul>
+      
+
+    <script>
+        function addtask(){
+         var taskInput = document.getElementById("input");
+         var taskText=taskInput.value.trim();
+
+         if(taskText !== ""){
+          var newTask=document.createElement("li");
+          //var addlist=document.getElementById("list");
+
+          newTask.innerHTML = taskText;
+
+          document.getElementById("list").appendChild(newTask);
+          taskInput.value="";
+
+
+
+
+
+         }
+
+
+
+
+        }
+    </script>
+
+    
+</body>
+</html>
+
+
+
+
