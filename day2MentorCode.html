@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 2 Mentor Codes</title>
+</head>
+<body>
+
+<h2>Summation of Two Values</h2>
+
+<!-- Input fields for two numbers -->
+<label for="num1">Enter first number:</label>
+<input type="number" id="num1"><br>
+
+<label for="num2">Enter second number:</label>
+<input type="number" id="num2"><br>
+
+<!-- Button to trigger summation -->
+<button onclick="sumValues()">Calculate Sum</button>
+
+<!-- Placeholder for displaying result -->
+<p id="result"></p>
+
+<h2>To-Do List</h2>
+
+<!-- Input field for adding new tasks -->
+<input type="text" id="taskInput" placeholder="Enter a new task">
+<button onclick="addTask()">Add</button>
+
+<!-- Task list -->
+<ul id="taskList"></ul>
+
+<script>
+function sumValues() {
+    // Get the values entered by the user
+    var num1 = parseFloat(document.getElementById("num1").value);
+    var num2 = parseFloat(document.getElementById("num2").value);
+
+    // Check if the values are valid numbers
+    if (!isNaN(num1) && !isNaN(num2)) {
+        // Calculate the sum
+        var sum = num1 + num2;
+        
+        // Display the result
+        document.getElementById("result").textContent = "The sum is: " + sum;
+    } else {
+        // Display an error message if invalid input is provided
+        document.getElementById("result").textContent = "Please enter valid numbers.";
+    }
+}
+
+function addTask() {
+    // Get the input value
+    var taskInput = document.getElementById("taskInput");
+    var taskText = taskInput.value.trim();
+
+    // Check if the input is not empty
+    if (taskText !== "") {
+        // Create a new task item
+        var newTask = document.createElement("li");
+        newTask.className = "taskItem";
+        
+        // Add a checkbox and task text
+        newTask.innerHTML = '<input type="checkbox"> ' + taskText;
+        
+        // Append the new task to the task list
+        document.getElementById("taskList").appendChild(newTask);
+        
+        // Clear the input field
+        taskInput.value = "";
+    }
+}
+
+
+
+
+</script>
+
+</body>
+</html>
