@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="Todo.css">
+</head>
+<body>
+    
+    <nav class="navbar">   
+        <div class="left">
+          <ul id="new">
+            <li id="new1"><a href="#">Home</a></li>
+            <li id="new1"><a href="#">About</a></li>
+          </ul>
+        </div>
+        <div class="nav-right">
+          <div class="online">
+            <img src="images/propic.jpeg"  class="nav-profile-img">
+          </div>
+        </div>
+      </nav>
+
+
+      <div class="main">
+        <div class="main1">
+          <h2>ToDo</h2>
+          <div class="row">
+            <input type="text" id="input-box" placeholder="ToDo-List">
+            <button   id="forButton" onclick="addList()">Add</button>
+          </div >
+          <ul id="list-container">
+            <!-- <li class="checked">Task1</li>
+            <li>Task1</li>
+            <li>Task1</li> -->
+          </ul>
+        </div>
+      </div>
+
+
+
+<script src="TodoScript.js"></script>
+
+
+</body>
+
+
+</html>
