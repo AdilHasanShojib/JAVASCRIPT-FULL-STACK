@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task List</title>
+  <link rel="stylesheet" href="task.css">
+</head>
+<body>
+
+
+  <nav class="navbar">   
+    <div class="left">
+      <ul id="new">
+        <li id="new1"><a href="#">Home</a></li>
+        <li id="new1"><a href="#">About</a></li>
+      </ul>
+    </div>
+    <div class="nav-right">
+      <div class="online">
+        <img src="../images/propic.jpeg"  class="nav-profile-img">
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+
+  <div class="main">
+    <div class="main1">
+      <h2>Task List</h2>
+      <div class="row">
+        <input type="text" id="input-box" placeholder="Tasks">
+        <button   id="forButton" onclick="addTask()">Add</button>
+        
+        <select id="tagfilter" onchange="filterTask()">
+        <option value="all">All</option>
+        <option value="today">Today</option>
+        <option value="tomorrow">Tomorrow</option>
+        
+        
+      </select>
+      </div >
+      <ul id="list-container">
+        
+      </ul>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+<script src="task.js"></script>
+</body>
+</html>
